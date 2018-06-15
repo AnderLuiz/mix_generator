@@ -170,7 +170,8 @@ defmodule Mix.Tasks.Gen do
         target_subdir:           project_name,
         template_module:         template_module,
         template_name:           template_module.name(),
-
+        just_files:              template_module.just_files(),
+        
         elixir_version:          System.version(),
         erlang_version:          :erlang.system_info(:version),
         otp_release:             :erlang.system_info(:otp_release),
